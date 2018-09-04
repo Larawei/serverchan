@@ -1,7 +1,7 @@
 <h1 align="center"> 🍬ServerChan </h1>
 
 <p align="center"> Server酱的PHP扩展包.</p>
-<p align="center"> 「Server酱」，英文名「ServerChan」，是一款「程序员」和「服务器」之间的通信软件。
+<p align="left"> 「Server酱」，英文名「ServerChan」，是一款「程序员」和「服务器」之间的通信软件。
 
  说人话？就是从服务器推报警和日志到手机的工具。 
  
@@ -102,10 +102,10 @@ SERVER_CHAN_KEY=xxxxxxxxxxxxxxxxxxxxx
 
 ```php
 $title = '['.config('app.name').'('.config('app.env').')]时间:' . Carbon::now()->toDateTimeString() . '信息:' .$exception->getMessage(). 'url: '.request()->fullUrl();
-        $content = sprintf("```
-        %s
-        ```", $exception->getTraceAsString());
-        app('serverChan')->send($title, $content);
+$content = sprintf("```
+    %s
+```", $exception->getTraceAsString());
+app('serverChan')->send($title, $content);
 ```
 
 ## License
