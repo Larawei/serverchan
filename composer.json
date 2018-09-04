@@ -1,0 +1,26 @@
+{
+    "name": "larawei\/serverchan",
+    "description": "Serve的PHP扩展包",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "LaraWei",
+            "email": "764098204@qq.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Larawei\\Serverchan\\": "./src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Larawei\\Serverchan\\ServiceProvider"
+            ]
+        }
+    }
+}
