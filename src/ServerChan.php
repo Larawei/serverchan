@@ -24,10 +24,6 @@ class ServerChan
             'desp' => $desp
         ]);
 
-//        $response = $this->getHttpClient()->post($url, [
-//            'query' => $query,
-//        ])->getBody()->getContents();
-
         $response = $this->getHttpClient()->post($url, [
             'form_params' => $query
         ])->getBody()->getContents();
